@@ -1,0 +1,89 @@
+@Marco1908 ➜ /workspaces/lezione-bash03-marco-evangelista (main) $ bash setup.sh
+🔧 Creazione ambiente di esercitazione...
+
+✅ Ambiente creato con successo!
+
+📁 Struttura creata in: /workspaces/lezione-bash03-marco-evangelista/esercizi/
+
+Contenuto:
+/workspaces/lezione-bash03-marco-evangelista/esercizi/
+├── dati
+│   ├── contatti.txt
+│   ├── dipendenti.csv
+│   ├── studenti.csv
+│   ├── testo_da_correggere.txt
+│   └── voti_registro.txt
+├── log
+│   ├── accessi.log
+│   └── server.log
+├── progetto
+│   ├── assets
+│   │   ├── css
+│   │   │   └── style.css
+│   │   └── img
+│   │       ├── banner.jpg
+│   │       ├── icon_home.svg
+│   │       ├── icon_settings.svg
+│   │       ├── logo.png
+│   │       ├── screenshot01.png
+│   │       └── screenshot02.png
+│   ├── build
+│   │   ├── App.class
+│   │   ├── Server.class
+│   │   └── TestApp.class
+│   ├── config
+│   │   ├── app.cfg
+│   │   └── database.cfg
+│   ├── docs
+│   │   └── README.md
+│   ├── src
+│   │   ├── main
+│   │   │   ├── App.java
+│   │   │   ├── Server.java
+│   │   │   └── index.html
+│   │   ├── test
+│   │   │   └── TestApp.java
+│   │   └── utils
+│   │       ├── Config.java
+│   │       └── Logger.java
+│   ├── .env
+│   ├── build.sh
+│   └── deploy.sh
+└── sandbox
+
+15 directories, 29 files
+
+🚀 Sei pronto per iniziare gli esercizi! Apri il README.md
+@Marco1908 ➜ /workspaces/lezione-bash03-marco-evangelista (main) $ find esercizi/progetto -iname "*.java"
+esercizi/progetto/src/test/TestApp.java
+esercizi/progetto/src/utils/Logger.java
+esercizi/progetto/src/utils/Config.java
+esercizi/progetto/src/main/Server.java
+esercizi/progetto/src/main/App.java
+@Marco1908 ➜ /workspaces/lezione-bash03-marco-evangelista (main) $ find esercizi/progetto -type d
+esercizi/progetto
+esercizi/progetto/assets
+esercizi/progetto/assets/css
+esercizi/progetto/assets/img
+esercizi/progetto/docs
+esercizi/progetto/config
+esercizi/progetto/build
+esercizi/progetto/src
+esercizi/progetto/src/test
+esercizi/progetto/src/utils
+esercizi/progetto/src/main
+@Marco1908 ➜ /workspaces/lezione-bash03-marco-evangelista (main) $ find esercizi -iname "*config*"
+esercizi/progetto/config
+esercizi/progetto/src/utils/Config.java
+@Marco1908 ➜ /workspaces/lezione-bash03-marco-evangelista (main) $ find esercizi/progetto -name "*.java" -exec echo {} \;
+esercizi/progetto/src/test/TestApp.java
+esercizi/progetto/src/utils/Logger.java
+esercizi/progetto/src/utils/Config.java
+esercizi/progetto/src/main/Server.java
+esercizi/progetto/src/main/App.java
+
+^# → righe che iniziano con il carattere # , per esempio i commenti.
+[0-9]+ → una o più cifre consecutive.
+\.java$ → righe che finiscono con .java .
+^$ → righe vuote .
+[A-Z][a-z]+ → parole che iniziano con una maiuscola seguita da una o più minuscole .
